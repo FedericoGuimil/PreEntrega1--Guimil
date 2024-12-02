@@ -1,0 +1,31 @@
+.navbar{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+    background-image: url(../../../public/img/madera.jpg);
+    background-size: cover;
+    .brand{
+        img{
+            width: 200px;
+        }
+    }
+
+
+    .categories{
+        display: flex;
+        li{
+            padding: 0 10px;
+            font-size: 20px;
+        }
+    }
+
+    .cartwidget{
+        display: flex;
+        p{
+            font-size: 20px;
+        }
+    }
+}
