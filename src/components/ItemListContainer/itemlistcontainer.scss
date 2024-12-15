@@ -1,13 +1,53 @@
 .itemlistcontainer{
+    min-height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
-    background-image: url("../../../public/img/grupo-musica.jpg");
-    background-size: cover;
+    padding: 30px;
     h1{
-        background-color: rgba(255, 255, 255, 0.575);
+        background-color: rgba(255, 255, 255, 0.719);
         border-radius: 10px;
         padding: 10px;
     }
+    .itemlist{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 20px;
+        padding: 20px;
+        .item{
+            padding: 10px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.719);
+            transition: transform 0.2s;
+            color: black;
+            .item-img{
+                width: 200px;
+            }
+        }
+    }
 }
+
+.itemdetail{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .itemdetail-container{
+        background-color: rgba(255, 255, 255, 0.719);
+        padding: 10px;
+        display: flex;
+        border-radius: 10px;
+    .itemdetail-img{
+        width: 400px;
+        border-radius: 10px;
+    }
+    .itemdetail-text{
+        padding: 15px;
+        margin: 10px
+    }
+    }
+}
+

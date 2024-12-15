@@ -2,11 +2,12 @@
     width: 100%;
     height: 80px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     color: black;
     background-image: url(../../../public/img/madera.jpg);
     background-size: cover;
+    padding: 10px;
     .brand{
         img{
             width: 200px;
@@ -16,9 +17,17 @@
 
     .categories{
         display: flex;
-        li{
+        .category{
             padding: 0 10px;
             font-size: 20px;
+            text-decoration: none;
+            color: black;
+        }
+        .category-active{
+            padding: 0 10px;
+            font-size: 20px;
+            text-decoration: none;
+            color: white;
         }
     }
 
